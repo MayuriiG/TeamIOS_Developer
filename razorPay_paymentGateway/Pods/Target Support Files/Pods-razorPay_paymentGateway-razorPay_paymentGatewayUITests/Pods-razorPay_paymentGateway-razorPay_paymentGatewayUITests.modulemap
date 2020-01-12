@@ -1,0 +1,6 @@
+framework module Pods_razorPay_paymentGateway_razorPay_paymentGatewayUITests {
+  umbrella header "Pods-razorPay_paymentGateway-razorPay_paymentGatewayUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
