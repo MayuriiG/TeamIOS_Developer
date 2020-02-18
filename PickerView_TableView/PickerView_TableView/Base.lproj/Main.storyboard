@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PickerView_TableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afq-hf-0BS">
+                                <rect key="frame" x="143" y="190" width="129" height="122"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="122" id="bdw-n7-ElW"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="iconMap"/>
+                                <connections>
+                                    <action selector="btnOpenAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HQp-7k-mh8"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZD-3o-zYW">
+                                <rect key="frame" x="47" y="356" width="320" height="248"/>
+                                <color key="backgroundColor" red="0.45916538913715571" green="0.58748930690000001" blue="0.46049234036736503" alpha="0.37003755364806867" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="248" id="0Ix-OU-Ovu"/>
+                                    <constraint firstAttribute="width" constant="320" id="GBr-7I-itb"/>
+                                </constraints>
+                            </pickerView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wAC-H4-MOW">
+                                <rect key="frame" x="47" y="312" width="320" height="44"/>
+                                <color key="backgroundColor" red="0.84855097530000001" green="0.77655583620000002" blue="0.77228075269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="T0G-4r-auy"/>
+                                    <constraint firstAttribute="height" constant="44" id="vlr-xS-RCi"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem id="rct-RL-LDA"/>
+                                    <barButtonItem title="Done" width="797.5" id="6j2-j5-epY">
+                                        <color key="tintColor" red="0.77281242610000001" green="0.65894740819999997" blue="0.63003170490000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="doneActn:" destination="BYZ-38-t0r" id="NRK-lT-tMp"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" red="0.84855097530000001" green="0.77655583620000002" blue="0.77228075269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U99-7X-CMt">
+                                <rect key="frame" x="47" y="604" width="320" height="34"/>
+                                <color key="backgroundColor" red="0.097947575151920319" green="0.50597220659255981" blue="0.41922610998153687" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="HpV-XE-XN1"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="Ygk-fr-kr8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PickerView" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ioj-eR-cCP">
+                                <rect key="frame" x="101" y="128" width="211" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="31"/>
+                                <color key="textColor" red="0.13557553291320801" green="0.50597876310348511" blue="0.41507613658905029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gZD-3o-zYW" firstAttribute="top" secondItem="wAC-H4-MOW" secondAttribute="bottom" id="3Be-Pm-EN7"/>
+                            <constraint firstItem="gZD-3o-zYW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="4fo-Ax-YtW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="afq-hf-0BS" secondAttribute="trailing" constant="142" id="6yh-NF-Cvz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gZD-3o-zYW" secondAttribute="trailing" constant="47" id="ACL-Nm-HKC"/>
+                            <constraint firstItem="afq-hf-0BS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="146" id="Ibp-WH-XGl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U99-7X-CMt" secondAttribute="trailing" constant="47" id="LL5-0A-FLT"/>
+                            <constraint firstItem="wAC-H4-MOW" firstAttribute="top" secondItem="afq-hf-0BS" secondAttribute="bottom" id="Txq-8u-bP6"/>
+                            <constraint firstItem="afq-hf-0BS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="XL3-cB-EuO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="U99-7X-CMt" secondAttribute="bottom" constant="224" id="YIH-dK-SlJ"/>
+                            <constraint firstItem="U99-7X-CMt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aMy-Ky-Naf"/>
+                            <constraint firstItem="U99-7X-CMt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="hkg-jh-Kma"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wAC-H4-MOW" secondAttribute="trailing" constant="47" id="rXF-V7-lh7"/>
+                            <constraint firstItem="wAC-H4-MOW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="u7L-8h-Nkc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="flexibleToolbar" destination="wAC-H4-MOW" id="bE7-VO-R0W"/>
+                        <outlet property="lblCitites" destination="U99-7X-CMt" id="ocu-Ub-5ap"/>
+                        <outlet property="pickrView" destination="gZD-3o-zYW" id="5j7-uj-r5x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iconMap" width="225" height="225"/>
+    </resources>
+</document>
